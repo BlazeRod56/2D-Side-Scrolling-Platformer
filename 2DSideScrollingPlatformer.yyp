@@ -30,15 +30,17 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"2DSideScrollingPlatformer",
   "resources":[
     {"id":{"name":"Grass","path":"objects/Grass/Grass.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
+    {"id":{"name":"SpeedPowerUp","path":"objects/SpeedPowerUp/SpeedPowerUp.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
+    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
