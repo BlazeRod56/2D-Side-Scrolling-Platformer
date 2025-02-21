@@ -71,7 +71,7 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDAction : YoYo Games.Movement.move_and_collide
 /// @DnDVersion : 1
 /// @DnDHash : 568161BD
-/// @DnDComment : object is the object being avoided by collision. 
+/// @DnDComment : object is the object being avoided by collision.
 /// @DnDApplyTo : {Cuber}
 /// @DnDArgument : "xvel" "move_x"
 /// @DnDArgument : "yvel" "move_y"
@@ -80,25 +80,3 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDArgument : "object" "Grass"
 /// @DnDSaveInfo : "object" "Grass"
 move_and_collide(move_x, move_y, Grass,4,0,0,walk_speed,jump_speed);
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 2F616031
-/// @DnDApplyTo : {SpeedPowerUp}
-/// @DnDArgument : "expr" "false"
-/// @DnDArgument : "var" "powerup_active"
-with(SpeedPowerUp) {
-powerup_active = false;
-
-}
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 5AC9CFDF
-/// @DnDApplyTo : {SpeedPowerUp}
-/// @DnDArgument : "expr" "move_speed"
-/// @DnDArgument : "var" "default_move_speed"
-with(SpeedPowerUp) {
-default_move_speed = move_speed;
-
-}
