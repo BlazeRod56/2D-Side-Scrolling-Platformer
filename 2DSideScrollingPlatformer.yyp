@@ -46,6 +46,7 @@
     {"id":{"name":"SpeedPowerUp","path":"objects/SpeedPowerUp/SpeedPowerUp.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"Story","path":"rooms/Story/Story.yy",},},
     {"id":{"name":"spr_coin_hud","path":"sprites/spr_coin_hud/spr_coin_hud.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_play_button","path":"sprites/spr_play_button/spr_play_button.yy",},},
@@ -60,6 +61,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Story","path":"rooms/Story/Story.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
