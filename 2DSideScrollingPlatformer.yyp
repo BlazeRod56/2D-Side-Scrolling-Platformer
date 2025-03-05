@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"2DSideScrollingPlatformer",
   "resources":[
@@ -43,6 +43,7 @@
     {"id":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},},
     {"id":{"name":"obj_label_text1","path":"objects/obj_label_text1/obj_label_text1.yy",},},
     {"id":{"name":"obj_label_text2","path":"objects/obj_label_text2/obj_label_text2.yy",},},
+    {"id":{"name":"obj_tileset","path":"objects/obj_tileset/obj_tileset.yy",},},
     {"id":{"name":"SpeedPowerUp","path":"objects/SpeedPowerUp/SpeedPowerUp.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
@@ -53,8 +54,10 @@
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
+    {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

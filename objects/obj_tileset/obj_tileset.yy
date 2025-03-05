@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hud_coins",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_tileset",
+  "eventList":[],
   "managed":true,
-  "name":"obj_hud_coins",
+  "name":"obj_tileset",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_coin_hud",
-    "path":"sprites/spr_coin_hud/spr_coin_hud.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
