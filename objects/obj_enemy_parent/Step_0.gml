@@ -58,10 +58,9 @@ if ((l6E974F3E_0 > 0))
 	/// @DnDParent : 6E974F3E
 	/// @DnDArgument : "x" "x + (30 + sign(move_x))"
 	/// @DnDArgument : "y" "y + 50"
-	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "object" "collision_tilemap"
 	/// @DnDArgument : "not" "1"
-	var l5D2D9AA3_0 = instance_place(x + (30 + sign(move_x)), y + y + 50, [collision_tilemap]);
+	var l5D2D9AA3_0 = instance_place(x + (30 + sign(move_x)), y + 50, [collision_tilemap]);
 	if (!(l5D2D9AA3_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
@@ -69,10 +68,16 @@ if ((l6E974F3E_0 > 0))
 		/// @DnDHash : 7C13A7FA
 		/// @DnDComment : jump
 		/// @DnDParent : 5D2D9AA3
-		/// @DnDArgument : "expr" "-jump_speed"
-		/// @DnDArgument : "var" "move_y"
-		move_y = -jump_speed;
+		/// @DnDArgument : "expr" "move_x * -1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x * -1;
 	}
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 49CABEB9
+	/// @DnDParent : 6E974F3E
+	variable = 0;
 
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
 	/// @DnDVersion : 1
