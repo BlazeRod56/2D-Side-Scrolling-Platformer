@@ -54,6 +54,7 @@
     {"id":{"name":"spr_enemy_idle_1","path":"sprites/spr_enemy_idle_1/spr_enemy_idle_1.yy",},},
     {"id":{"name":"spr_enemy_jump_1","path":"sprites/spr_enemy_jump_1/spr_enemy_jump_1.yy",},},
     {"id":{"name":"spr_enemy_walk_1","path":"sprites/spr_enemy_walk_1/spr_enemy_walk_1.yy",},},
+    {"id":{"name":"spr_floor_tile","path":"sprites/spr_floor_tile/spr_floor_tile.yy",},},
     {"id":{"name":"spr_play_button","path":"sprites/spr_play_button/spr_play_button.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},

@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_floor_tile",
+    "path":"sprites/spr_floor_tile/spr_floor_tile.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

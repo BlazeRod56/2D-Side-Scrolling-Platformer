@@ -7,13 +7,6 @@
 /// @DnDArgument : "var" "move_x"
 
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 5E080E99
-/// @DnDArgument : "expr" "move_x * walk_speed"
-/// @DnDArgument : "var" "move_x"
-move_x = move_x * walk_speed;
-
 /// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 /// @DnDVersion : 1
 /// @DnDHash : 6B97E2FA
@@ -26,9 +19,8 @@ show_debug_message(string(move_x));
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "object" "Grass"
-/// @DnDSaveInfo : "object" "Grass"
-var l6E974F3E_0 = instance_place(x + 0, y + 2, [Grass]);
+/// @DnDArgument : "object" "collision_tilemap"
+var l6E974F3E_0 = instance_place(x + 0, y + 2, [collision_tilemap]);
 if ((l6E974F3E_0 > 0))
 {
 	/// @DnDAction : YoYo Games.Common.Variable
@@ -36,8 +28,9 @@ if ((l6E974F3E_0 > 0))
 	/// @DnDHash : 33D922DF
 	/// @DnDComment : reset the falling speed$(13_10)on movement Y$(13_10)when you landed on ground
 	/// @DnDParent : 6E974F3E
+	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "move_y"
-	move_y = 0;
+	move_y += 0;
 
 	/// @DnDAction : YoYo Games.Collisions.If_Object_At
 	/// @DnDVersion : 1.1
@@ -45,9 +38,8 @@ if ((l6E974F3E_0 > 0))
 	/// @DnDParent : 6E974F3E
 	/// @DnDArgument : "x" "x + (25 + sign(move_x))"
 	/// @DnDArgument : "y_relative" "1"
-	/// @DnDArgument : "object" "Grass"
-	/// @DnDSaveInfo : "object" "Grass"
-	var l2A752F8B_0 = instance_place(x + (25 + sign(move_x)), y + 0, [Grass]);
+	/// @DnDArgument : "object" "collision_tilemap"
+	var l2A752F8B_0 = instance_place(x + (25 + sign(move_x)), y + 0, [collision_tilemap]);
 	if ((l2A752F8B_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
@@ -65,11 +57,12 @@ if ((l6E974F3E_0 > 0))
 	/// @DnDHash : 5D2D9AA3
 	/// @DnDParent : 6E974F3E
 	/// @DnDArgument : "x" "x + (30 + sign(move_x))"
+	/// @DnDArgument : "y" "y + 50"
 	/// @DnDArgument : "y_relative" "1"
-	/// @DnDArgument : "object" "Grass"
-	/// @DnDSaveInfo : "object" "Grass"
-	var l5D2D9AA3_0 = instance_place(x + (30 + sign(move_x)), y + 0, [Grass]);
-	if ((l5D2D9AA3_0 > 0))
+	/// @DnDArgument : "object" "collision_tilemap"
+	/// @DnDArgument : "not" "1"
+	var l5D2D9AA3_0 = instance_place(x + (30 + sign(move_x)), y + y + 50, [collision_tilemap]);
+	if (!(l5D2D9AA3_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -123,6 +116,5 @@ else
 /// @DnDArgument : "yvel" "move_y"
 /// @DnDArgument : "maxxmove" "walk_speed"
 /// @DnDArgument : "maxymove" "jump_speed"
-/// @DnDArgument : "object" "Grass"
-/// @DnDSaveInfo : "object" "Grass"
-move_and_collide(move_x, move_y, Grass,4,0,0,walk_speed,jump_speed);
+/// @DnDArgument : "object" "collision_tilemap"
+move_and_collide(move_x, move_y, collision_tilemap,4,0,0,walk_speed,jump_speed);
